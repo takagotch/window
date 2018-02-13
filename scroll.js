@@ -16,3 +16,8 @@ $("#scroll4").on("click", function(){
 });
 
 
+//
+window.location.hash("#pagetop")
+
+
+
