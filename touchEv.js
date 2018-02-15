@@ -12,18 +12,20 @@ function displayTouchesInfo(ev){
 	logMsgs.push(", tt = [" + ev.targetTouches.length + "]<br/>");
 	$.each(ev.touches, function(ev){
 	  logMessages.push(
-	    ""
-	  );
+	    "t[" + this.identifier + "](" + this.clientX + "," + this.clientY + ")(" +
+	    this.pageX + "," + this.pageY + ")(" + this.screenX + "," + this.screenY + ")");
 	});
 	$.each(ev.targetTouches, function(idx){
 	  logMsgs.push(
-	  
-	  );
+	    "ct[" + this.identifier + "](" + this.clientX + "," + this.clientY + ")(" +
+	    this.pageX + "," + this.pageY + ")(" + this.screenX + "," + this.screenY +
+	  ")");
 	});
 	$.each(ev.targetTouches, functon(idx){
 	  logMsgs.push(
-	  
-	  );
+	    "tt[" + this.identifier + "](" + this.clientX + "," + this.clientY + ")(" +
+	    this.pageX + "," + this.pageY + ")(" + this.screenX + "," + this.screenY +
+	  ")");
 	});
 	log(logMsgs.join(""));
 }
